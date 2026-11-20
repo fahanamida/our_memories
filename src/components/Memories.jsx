@@ -4,15 +4,16 @@ import "./Memories.css";
 
 const photos = [
   {
-    image: "/public/images/mem1.png",
-    caption: "My favourite us ♡",
-    type: "OUR MOMENT"
-  },
-  {
-    image: "/public/images/mem2.png",
-    caption: "My favourite person",
-    type: "MY AZHALOOO"
-  },
+image: "/images/mem1.png",
+caption: "My favourite us ♡",
+type: "OUR MOMENT"
+},
+{
+image: "/images/mem2.png",
+caption: "My favourite person",
+type: "MY AZHALOOO"
+},
+
   
 ];
 
