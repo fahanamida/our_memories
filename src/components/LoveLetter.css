@@ -1,0 +1,252 @@
+.letter-section {
+  padding: 120px 20px;
+  background:
+    radial-gradient(ellipse at center, rgba(105, 0, 25, 0.18), transparent 65%),
+    #090707;
+  text-align: center;
+  color: #f8eee9;
+  overflow: hidden;
+}
+
+.letter-heading {
+  margin-bottom: 75px;
+}
+
+.letter-heading > span {
+  color: #c17b82;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.letter-heading h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(38px, 6vw, 65px);
+  font-weight: 400;
+  margin: 18px 0;
+}
+
+.letter-heading h2 i {
+  color: #c77c83;
+}
+
+.letter-heading p {
+  color: #a99b98;
+  font-size: 13px;
+}
+
+/* Envelope cover */
+
+.letter-cover {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.envelope {
+  position: relative;
+  height: 280px;
+  background: #45151e;
+  border: 1px solid #a85b65;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.letter-cover:hover .envelope {
+  transform: translateY(-8px);
+}
+
+.envelope-paper {
+  position: absolute;
+  inset: 18px;
+  background: #f2e5d8;
+  color: #4c2026;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+}
+
+.envelope-paper svg {
+  color: #9c4654;
+}
+
+.envelope-paper span {
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.envelope-paper h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.envelope-paper p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.envelope-flap {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #6d2634, #3b111b);
+  clip-path: polygon(0 0, 100% 0, 50% 60%);
+  border-bottom: 1px solid rgba(220, 150, 150, 0.4);
+  pointer-events: none;
+}
+
+.envelope-seal {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: #c28a70;
+  border: 2px solid #e2b8a0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #641e2b;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.letter-click {
+  margin-top: 30px;
+  color: #c58b8b;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* Open letter */
+
+.opened-letter {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+  padding: 14px;
+  background: #3e171f;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+}
+
+.paper-content {
+  position: relative;
+  padding: 55px 55px 35px;
+  background:
+    radial-gradient(circle at top right, rgba(180, 130, 100, 0.1), transparent 35%),
+    #f5ebdf;
+  color: #492a2a;
+  text-align: left;
+}
+
+.letter-close {
+  position: absolute;
+  right: 23px;
+  top: 23px;
+  z-index: 5;
+  background: #57202b;
+  color: #fff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper-top {
+  display: block;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #a46b6b;
+  margin-bottom: 35px;
+}
+
+.paper-heart {
+  display: block;
+  margin: auto;
+  color: #a84e5c;
+}
+
+.paper-content h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 39px;
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+.letter-body p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 17px;
+  color: #624b46;
+}
+
+.letter-ending {
+  margin-top: 35px;
+  text-align: right;
+}
+
+.letter-ending span {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.letter-ending h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 38px;
+  font-weight: 400;
+  color: #a84e5c;
+  margin-top: 5px;
+}
+
+.paper-bottom {
+  text-align: center;
+  border-top: 1px solid #d8c4b7;
+  padding-top: 20px;
+  margin-top: 30px;
+  color: #a77d75;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .letter-section {
+    padding: 85px 18px;
+  }
+
+  .envelope {
+    height: 250px;
+  }
+
+  .paper-content {
+    padding: 65px 23px 30px;
+  }
+
+  .paper-content h2 {
+    font-size: 32px;
+  }
+
+  .letter-body p {
+    font-size: 16px;
+  }
+
+  .paper-bottom {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
